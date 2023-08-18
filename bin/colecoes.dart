@@ -1,4 +1,49 @@
+import 'dart:io';
 void main (List <String> arguments){
+  //conjuntos
+  var A = {1, 2, 3, 4, 5, 6};
+  var B = {1, 3, 7};
+  print(A.union(B));//1, 2, 3, 4, 5, 6, 7
+  print(A.intersection(B)); //1, 3
+  print(A.difference(B)); //2, 4, 5, 6
+  print(B.difference(A)); //7
+  print(A.difference(A)); //{}
+
+  //type annotation
+  // var nomes = {'Ana', 'Pedro'};
+  // print(nomes.elementAt(2));
+  // // print(nomes[0]); //não funciona
+  // // print(nomes{0});//não também :(
+  // print(nomes.elementAt(0));//começando do zero
+
+  // for (int i = 0; i < nomes.length; i++){
+  //   print(nomes.elementAt(i));
+  // }
+
+  // for (final nome in nomes){
+  //   print(nome);
+  // }
+
+  // var eAgora = <String, String> {};
+  //{1, 2} == {2, 1} == {1, 1, 1, 1,1, 2, 2, 2}
+  // var nomes = {'Ana', 'João'}; //_Set<String>
+  // var paises = {'Brasil', 'Brasil'};
+  // var teste = {}; //_Set<dynamic> não, isso é um mapa
+  // print(teste.runtimeType);
+
+  // var nome = stdin.readLineSync();
+  // var pessoa = (nome, 18);
+  // print(pessoa);
+  //tuplas (lista imutável)
+  //também chamadas de records
+  // var tupla = ('Ana', 18, true);
+  // print(tupla[0]);
+  // print(tupla{0});
+  // print(tupla.$1);
+  // print(tupla.$2);
+  // print(tupla);
+  // print(tupla.runtimeType);
+
   //sound null safety
   // List < List <int?>? >? inteiros;
   // List<String?>? lista;
